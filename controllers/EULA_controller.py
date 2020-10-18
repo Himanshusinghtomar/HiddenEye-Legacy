@@ -44,10 +44,10 @@ class EULAController:
 
     def confirm_eula(self):
         print(
-            f'{self.license.read()}\n{EULAView().EULA_messages["eula_power_and_responsibility_message"]}\n')
+            f'{self.license.read()}\n{EULAView().EULA_messages["eula_power_and_responsibility_message"]}\n)
         print(EULAView().EULA_messages["eula_full_disclaimer"])
         print(
-            f'{EULAView().EULA_messages["eula_do_you_accept"]} \n\n{EULAView().EULA_messages["eula_enter_to_continue"]}\n')
+            f'{EULAView().EULA_messages["eula_do_you_accept"]} \n\n{EULAView().EULA_messages["eula_enter_to_continue"]}\n)
         answer = input(
             EULAView().EULA_messages["eula_input_prompt"]).lower().replace(" ", "")
         if answer == "iaccepteula":
